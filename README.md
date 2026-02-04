@@ -3,7 +3,7 @@
 **Author:** Shubham Dev  
 **Institution:** Jaypee University of Information Technology  
 **Contact:** 251030181@juitsolan.in (Primary), devcoder29cse@gmail.com (Permanent)
-**Repository:** [pheonix-delta/WiredBrain-Hierarchical-RAG](https://github.com/pheonix-delta/WiredBrain-Hierarchical-RAG)
+**Repository:** [pheonix-delta/WiredBrain-Hierarchical-RAG](https://github.com/pheonix-delta/WiredBrain-Hierarchical-Rag)
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 [![Python 3.10+](https://img.shields.io/badge/python-3.10+-blue.svg)](https://www.python.org/downloads/)

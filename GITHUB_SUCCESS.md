@@ -1,6 +1,6 @@
 # 🎉 SUCCESS! WiredBrain is Now on GitHub!
 
-**Repository URL:** https://github.com/pheonix-delta/WiredBrain-Hierarchical-RAG
+**Repository URL:** https://github.com/pheonix-delta/WiredBrain-Hierarchical-Rag
 
 **Date:** 2026-02-04  
 **Status:** ✅ LIVE ON GITHUB
@@ -56,7 +56,7 @@ Now that you have the GitHub URL, update the research paper:
 cd /home/user/Desktop/WiredBrain/hierarchical-rag-system/paper
 
 # Add to abstract or introduction:
-# "Code available at: \url{https://github.com/pheonix-delta/WiredBrain-Hierarchical-RAG}"
+# "Code available at: \url{https://github.com/pheonix-delta/WiredBrain-Hierarchical-Rag}"
 
 # 2. Recompile PDF
 pdflatex WiredBrain_Research_Paper.tex
@@ -120,7 +120,7 @@ Now that it's on GitHub, others can cite your work:
   title={WiredBrain: Hierarchical Agentic RAG Scaling to 693K Chunks on Consumer Hardware},
   author={Dev, Shubham},
   year={2026},
-  url={https://github.com/pheonix-delta/WiredBrain-Hierarchical-RAG},
+  url={https://github.com/pheonix-delta/WiredBrain-Hierarchical-Rag},
   institution={Jaypee University of Information Technology}
 }
 ```
@@ -137,7 +137,7 @@ Jaypee University of Information Technology
 - Primary: 251030181@juitsolan.in
 - Permanent: devcoder29cse@gmail.com
 
-**GitHub:** https://github.com/pheonix-delta/WiredBrain-Hierarchical-RAG
+**GitHub:** https://github.com/pheonix-delta/WiredBrain-Hierarchical-Rag
 
 ---
 
