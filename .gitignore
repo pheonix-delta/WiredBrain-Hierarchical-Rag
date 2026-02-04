@@ -1,0 +1,31 @@
+# Ignore huge data
+data/full_dataset/
+*.csv
+*.json
+!data/samples/sample_data.json  # Do NOT ignore the sample
+
+# Ignore Models
+*.gguf
+*.bin
+*.pt
+
+# Ignore System/Env
+__pycache__/
+.env
+venv/
+node_modules/
+
+# LaTeX
+*.aux
+*.log
+*.out
+*.synctex.gz
+*.fdb_latexmk
+*.fls
+
+# Python
+*.pyc
+*.pyo
+*.egg-info/
+dist/
+build/
