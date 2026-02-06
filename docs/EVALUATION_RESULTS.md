@@ -1,5 +1,5 @@
 # WiredBrain Evaluation Results
-
+**DOI:** [10.13140/RG.2.2.25652.31363](https://doi.org/10.13140/RG.2.2.25652.31363)  
 **Date:** 2026-02-04  
 **System Version:** 1.0  
 **Evaluation Status:** ✅ COMPLETE

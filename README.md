@@ -7,6 +7,7 @@
 [![Python 3.10+](https://img.shields.io/badge/python-3.10+-blue.svg?style=for-the-badge&logo=python&logoColor=white)](https://www.python.org/downloads/)
 [![Status: Research Prototype](https://img.shields.io/badge/status-research%20prototype-orange.svg?style=for-the-badge)]()
 [![Paper](https://img.shields.io/badge/📄_Read_Paper-PDF-red.svg?style=for-the-badge)](docs/WiredBrain_Research_Paper.pdf)
+[![DOI](https://img.shields.io/badge/DOI-10.13140/RG.2.2.25652.31363-blue.svg?style=for-the-badge)](https://doi.org/10.13140/RG.2.2.25652.31363)
 [![Stars](https://img.shields.io/github/stars/pheonix-delta/WiredBrain-Hierarchical-Rag?style=for-the-badge&logo=github)](https://github.com/pheonix-delta/WiredBrain-Hierarchical-Rag/stargazers)
 
 **Author:** Shubham Dev | **Institution:** Jaypee University of Information Technology  
@@ -563,7 +564,8 @@ If you use this work in your research, please cite:
   title={WiredBrain: A Hierarchical Multi-Domain RAG Architecture},
   author={Dev, Shubham},
   institution={Jaypee University of Information Technology},
-  year={2026}
+  year={2026},
+  doi={10.13140/RG.2.2.25652.31363}
 }
 ```
 
