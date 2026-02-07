@@ -30,7 +30,9 @@ try:
 except ImportError:
     TOON_AVAILABLE = False
     print("⚠️  TOON libraries not installed")
-    print("Run: pip install transformers scikit-learn msgpack lz4 --break-system-packages")
+    print("Create a venv and install:")
+    print("  python -m venv .venv && source .venv/bin/activate")
+    print("  pip install transformers scikit-learn msgpack lz4")
 
 # Configuration
 INPUT_DIR = Path("labeled")

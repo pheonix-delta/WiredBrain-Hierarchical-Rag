@@ -25,7 +25,9 @@ try:
 except ImportError:
     CLEANING_AVAILABLE = False
     print("⚠️  Cleaning libraries not installed")
-    print("Run: pip install ftfy clean-text unidecode textstat langdetect --break-system-packages")
+    print("Create a venv and install:")
+    print("  python -m venv .venv && source .venv/bin/activate")
+    print("  pip install ftfy clean-text unidecode textstat langdetect")
 
 # Optional: Language detection
 try:

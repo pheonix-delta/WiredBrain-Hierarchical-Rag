@@ -22,7 +22,9 @@ try:
     DATASKETCH_AVAILABLE = True
 except ImportError:
     DATASKETCH_AVAILABLE = False
-    print("⚠️  datasketch not installed. Run: pip install datasketch --break-system-packages")
+    print("⚠️  datasketch not installed. Create a venv and install:")
+    print("  python -m venv .venv && source .venv/bin/activate")
+    print("  pip install datasketch")
 
 # Configuration - paths relative to script location
 SCRIPT_DIR = Path(__file__).parent
@@ -167,7 +169,9 @@ def process_file(input_file, deduplicator):
 def main():
     if not DATASKETCH_AVAILABLE:
         print("\n❌ Cannot proceed without 'datasketch' library")
-        print("Install with: pip install datasketch --break-system-packages")
+        print("Create a venv and install:")
+        print("  python -m venv .venv && source .venv/bin/activate")
+        print("  pip install datasketch")
         return
     
     print("=" * 80)
