@@ -4,11 +4,27 @@
 ### Hierarchical Agentic RAG Scaling to 693K Chunks on Consumer Hardware
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg?style=for-the-badge)](LICENSE)
-[![Python 3.10+](https://img.shields.io/badge/python-3.10+-blue.svg?style=for-the-badge&logo=python&logoColor=white)](https://www.python.org/downloads/)
+
+[![Python3.10+](https://img.shields.io/badge/python-3.10+-blue.svg?style=for-the-badge&logo=python&logoColor=white)](https://www.python.org/downloads/)
+
 [![Status: Research Prototype](https://img.shields.io/badge/status-research%20prototype-orange.svg?style=for-the-badge)]()
+
 [![Paper](https://img.shields.io/badge/📄_Read_Paper-PDF-red.svg?style=for-the-badge)](docs/WiredBrain_Research_Paper.pdf)
+
 [![DOI](https://img.shields.io/badge/DOI-10.13140/RG.2.2.25652.31363-blue.svg?style=for-the-badge)](https://doi.org/10.13140/RG.2.2.25652.31363)
-[![Stars](https://img.shields.io/github/stars/pheonix-delta/WiredBrain-Hierarchical-Rag?style=for-the-badge&logo=github)](https://github.com/pheonix-delta/WiredBrain-Hierarchical-Rag/stargazers)
+
+<div align="center">
+
+> 🚀 **Update:** Trending on r/LocalLLaMA & r/selfhosted!
+> **Adoption:** 50+ Clones in 24h | **Status:** v1.0 (Lightweight Edge-Optimized)
+>
+> 🧪 **Research Status:** This is the *fast* implementation. The **Full "Fuzzy Router" Architecture** (Graph Fusion + Multi-Pathing) is currently under **Preprint/Journal Review**.
+>
+> ⭐ **Star this repo!** > *(Help us prove to the industry that running 693k chunks on a GTX 1650 isn't "impossible"—it's just efficient.)*
+> 
+</div>
+<br>
+
 
 **Author:** Shubham Dev | **Institution:** Jaypee University of Information Technology  
 📧 [251030181@juitsolan.in](mailto:251030181@juitsolan.in) | [devcoder29cse@gmail.com](mailto:devcoder29cse@gmail.com)
