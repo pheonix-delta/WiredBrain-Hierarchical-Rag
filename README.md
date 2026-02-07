@@ -20,7 +20,7 @@
 --
 
 > 🚀 **Update:** Trending on r/LocalLLaMA & r/selfhosted!
-> **Adoption:** 50+ Clones in 24h | **Status:** v1.0 (Lightweight Edge-Optimized)
+> **Adoption:** 60+ Clones in 12h | **Status:** v1.0 (Lightweight Edge-Optimized)
 >
 --
 > 🧪 **Research Status:** This is the *fast* implementation. The **Full "Fuzzy Router" Architecture** (Graph Fusion + Multi-Pathing) is currently under **Preprint/Journal Review**.
