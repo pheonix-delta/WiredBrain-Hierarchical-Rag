@@ -15,6 +15,9 @@
 
 <div align="center">
 
+> 🤖 **Voice Interface:** [Axiom (Low-Latency Agent)](https://github.com/pheonix-delta/axiom-voice-agent)
+
+
 > 🚀 **Update:** Trending on r/LocalLLaMA & r/selfhosted!
 > **Adoption:** 50+ Clones in 24h | **Status:** v1.0 (Lightweight Edge-Optimized)
 >
