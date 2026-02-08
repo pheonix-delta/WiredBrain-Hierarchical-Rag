@@ -35,4 +35,5 @@ build/
 # Ignore accidental nested home directory
 home/
 
-/home/user/Desktop/WiredBrain/WiredBrain-RAG/docs/internal
+docs/internal/
+scripts/

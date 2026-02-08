@@ -42,6 +42,12 @@
 
 ---
 
+<p align="center">
+  <img src="docs/images/market_comparison_clean.png" alt="Market Comparison" width="100%">
+</p>
+
+---
+
 
 ## Abstract
 
@@ -428,23 +434,19 @@ results = retriever.retrieve(query, top_k=20)
 ---
 
 
-## Performance Results
+### **Market Advantage: Comparison with Existing Work**
 
-### Comparison with Existing RAG Systems
+WiredBrain is designed specifically to bring enterprise-grade RAG performance to consumer-grade hardware.
 
-<div align="center">
+| Feature | Traditional RAG | Microsoft GraphRAG | **WiredBrain (Ours)** |
+| :--- | :--- | :--- | :--- |
+| **Search Space** | Flat (693K chunks) | Recursive Summaries | **Hierarchical (99.9% Reduced)** |
+| **Hardware** | High VRAM / Server | A100 / H100 GPU | **Consumer Laptop (GTX 1650)** |
+| **Routing** | LLM-based (Slow) | Global/Local Search | **3-Stage Neural (<50ms)** |
+| **Performance** | "Lost in the Middle" | Memory Intensive | **Latency Optimized (98ms)** |
+| **Cost** | Expensive Cloud Fees | Enterprise Pricing | **$0 (100% Local)** |
 
-| System | Chunks | Domains | Quality | Hardware |
-|:-------|:---------:|:----------:|:----------:|:------------|
-| LangChain (Typical) | 50K | 1-2 | ~0.65 | Any |
-| LlamaIndex (Typical) | 75K | 1-2 | ~0.70 | Any |
-| Commercial RAG | 100K | 3-5 | ~0.75 | High-end GPU |
-| Research Baseline | 120K | 1 | ~0.60 | A100 |
-| **WiredBrain (Ours)** | **693K** | **13** | **0.878** | **GTX 1650** |
-
-</div>
-
-> **Our Advantage:** 7× larger scale • 4× more domains • +17% quality • Consumer hardware
+> **Bottom Line:** WiredBrain provides 7× larger scale and 13× faster retrieval than traditional systems, all while running on hardware you already own.
 
 ### Retrieval Efficiency
 
