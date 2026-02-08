@@ -98,9 +98,6 @@ We present **WiredBrain**, a novel hierarchical RAG architecture that addresses 
 </tr>
 </table>
 
-<p align="center">
-  <img src="docs/images/fig9_trm_metrics.png" alt="TRM Metrics" width="100%">
-</p>
 
 ### Results at a Glance
 
@@ -117,6 +114,29 @@ We present **WiredBrain**, a novel hierarchical RAG architecture that addresses 
 ### **[Read the Full Research Paper](docs/WiredBrain_Research_Paper.pdf)**
 
 </div>
+
+---
+
+## **The Microsoft Constraint vs. The WiredBrain Solution**
+
+Microsoft's foundational research, **"Lost in the Middle"** (Liu et al., 2023), proved that large language models suffer from severe accuracy drops when critical information is buried in the center of a long context. Traditional RAG systems (LangChain, LlamaIndex) exacerbate this by providing "flat" context chunks without verifiable logic.
+
+### **How WiredBrain Solves It:**
+
+WiredBrain's **Transparent Reasoning Module (TRM)** creates a "Reasoning Bridge" that other systems lack:
+
+| The Problem (Microsoft Research) | The WiredBrain Solution (TRM) |
+| :--- | :--- |
+| **Silent Hallucinations** | **Gaussian Confidence Check (GCC)** autonomously detects and rolls back errors. |
+| **Reasoning Drift** | **XYZ Stream Anchors** keep the model strictly focused on the original goal. |
+| **Context Saturation** | **Hierarchical Addressing** reduces search space by 99.9%, removing irrelevant noise. |
+| **Zero Audit Trail** | **Z-Stream Rationalization** provides a persistent log of every logical step taken. |
+
+<p align="center">
+  <img src="docs/images/fig9_trm_metrics.png" alt="TRM Performance Metrics" width="100%">
+  <br>
+  <i>Figure 9: TRM reduces hallucination rates by 22% and achieves 98% confidence via iterative verification loops.</i>
+</p>
 
 ---
 
