@@ -2,46 +2,83 @@
 import matplotlib.pyplot as plt
 import pandas as pd
 
-# Data for comparison
+# Updated Data for comparison with Microsoft Solving points
 data = {
-    "Feature": ["Search Space", "Hardware", "Routing", "Performance", "Cost"],
-    "Traditional RAG": ["Flat (693K chunks)", "High VRAM / Server", "LLM-based (Slow)", "\"Lost in Middle\"", "Cloud Fees"],
-    "Microsoft GraphRAG": ["Recursive Summaries", "A100 / H100 GPU", "Global/Local Search", "Memory Intensive", "Enterprise Model"],
-    "WiredBrain (Ours)": ["Hierarchical (99% Reduction)", "GTX 1650 (Laptop)", "3-Stage Neural (<50ms)", "Latency Optimized", "$0 (100% Local)"]
+    "Technical Metric": [
+        "Search Space", 
+        "Hardware Required", 
+        "MS Constraint (Lost-in-Middle)", 
+        "Reasoning Path", 
+        "Deployment Cost"
+    ],
+    "Traditional RAG": [
+        "Flat (693K chunks)", 
+        "High VRAM / Server", 
+        "Vulnerable (Accuracy Drop)", 
+        "Black-Box (Stochastic)", 
+        "Cloud API Fees"
+    ],
+    "Microsoft GraphRAG": [
+        "Recursive Summaries", 
+        "Enterprise (A100/H100)", 
+        "Summarization Overload", 
+        "LLM-Intensive", 
+        "Premium Licensing"
+    ],
+    "WiredBrain (Ours)": [
+        "Hierarchical (99% Reduction)", 
+        "Consumer (GTX 1650)", 
+        "SOLVED: Address Routing", 
+        "Transparent (X/Y/Z Streams)", 
+        "$0 (100% Local)"
+    ]
 }
 
 df = pd.DataFrame(data)
 
 # Create figure and axis
-fig, ax = plt.subplots(figsize=(12, 6))
+fig, ax = plt.subplots(figsize=(14, 7))
 ax.axis('off')
 
 # Design colors
-colors = [["#f2f2f2"] * 4, ["#ffffff"] * 4, ["#ffffff"] * 4, ["#ffffff"] * 4, ["#e6f7ff"] * 4]
+header_color = "#1a1a1a"
+wiredbrain_color = "#e6f7ff"
+font_family = 'sans-serif'
 
 # Create table
 table = ax.table(cellText=df.values, 
                  colLabels=df.columns, 
-                 cellLoc='center', 
+                 cellLoc='left', 
                  loc='center',
-                 colColours=["#333333"] * 4)
+                 colColours=[header_color] * len(df.columns))
 
 # Styling
 table.auto_set_font_size(False)
-table.set_fontsize(11)
-table.scale(1.2, 2.5)
+table.set_fontsize(12)
+table.scale(1.1, 2.8)
 
-# Bold titles and colors
+# Stylistic refinements
 for (row, col), cell in table.get_celld().items():
+    cell.set_edgecolor('#d9d9d9')
+    cell.set_linewidth(0.5)
+    
+    # Header Styling
     if row == 0:
-        cell.set_text_props(weight='bold', color='white')
-    if col == 3: # WiredBrain column
-        cell.set_facecolor('#e6f7ff') # Soft light blue highlight
-        if row == 0:
-            cell.set_text_props(weight='bold', color='black') # Header text black
-        else:
-            cell.set_text_props(weight='bold')
+        cell.set_text_props(weight='bold', color='white', family=font_family)
+        cell.set_facecolor(header_color)
+        if col == 3: # WiredBrain column header
+            cell.set_facecolor(wiredbrain_color)
+            cell.set_text_props(weight='bold', color='black')
+    
+    # WiredBrain Column Highlight
+    if col == 3 and row > 0:
+        cell.set_facecolor(wiredbrain_color)
+        cell.set_text_props(weight='bold', color='#004085') # Deep blue for emphasis
+        
+    # Microsoft Solve Highlight
+    if row == 3 and col == 3:
+        cell.set_text_props(color='#d32f2f') # Red highlight for "SOLVED"
 
-plt.title("WiredBrain: Market Advantage Comparison", fontsize=16, pad=20, weight='bold')
+plt.title("WiredBrain: Dominating the Consumer RAG Market", fontsize=18, pad=30, weight='bold', family=font_family)
 plt.savefig('/home/user/Desktop/WiredBrain/WiredBrain-RAG/docs/images/market_comparison_clean.png', bbox_inches='tight', dpi=300)
-print("Table image generated successfully.")
+print("Professional Table image with Microsoft Solve points generated successfully.")
