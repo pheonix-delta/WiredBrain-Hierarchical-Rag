@@ -144,28 +144,34 @@ WiredBrain's **Transparent Reasoning Module (TRM)** creates a "Reasoning Bridge"
 
 <table>
 <tr>
-<td align="center" width="25%">
+<td align="center" width="20%">
 
 ### **[Architecture](docs/ARCHITECTURE.md)**
 3-stage routing, hierarchical addressing, hybrid retrieval
 
 </td>
-<td align="center" width="25%">
+<td align="center" width="20%">
 
 ### **[Usage Guide](docs/USAGE.md)**
 Code examples and practical implementation
 
 </td>
-<td align="center" width="25%">
+<td align="center" width="20%">
 
 ### **[SetFit Training](docs/SETFIT_TRAINING.md)**
 Train your own gate classifier
 
 </td>
-<td align="center" width="25%">
+<td align="center" width="20%">
 
 ### **[Research Paper](docs/WiredBrain_Research_Paper.pdf)**
 Complete 15-page technical paper
+
+</td>
+<td align="center" width="20%">
+
+### **[Novelty Proof](docs/NOVELTY_MATRIX.md)**
+Technical head-to-head vs. SOTA
 
 </td>
 </tr>
