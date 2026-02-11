@@ -4,10 +4,21 @@
 
 ### Hierarchical RAG scaling to 693K chunks on consumer hardware
 
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg?style=for-the-badge)](LICENSE)
+[![License: AGPL v3](https://img.shields.io/badge/License-AGPL_v3-blue.svg?style=for-the-badge)](LICENSE)
 [![Python3.10+](https://img.shields.io/badge/python-3.10+-blue.svg?style=for-the-badge&logo=python&logoColor=white)](https://www.python.org/downloads/)
 [![Status: Research Prototype](https://img.shields.io/badge/status-research%20prototype-orange.svg?style=for-the-badge)]()
-<br>
+
+---
+
+### **🛡️ The Data Sovereignty Mission**
+
+WiredBrain was built to prove that high-stakes reasoning belongs on the edge, not just in the cloud. To ensure this project remains a community-first asset and to protect it from closed-source exploitation, we have updated our licensing model.
+
+*   **Open Source & Researchers:** This project is now **AGPLv3**. We love contributors! If you use WiredBrain in an open-source project, it’s free forever.
+*   **Commercial Use:** If you are a company looking to integrate WiredBrain into a proprietary (closed-source) product, we offer a **Commercial License** to protect your interests and support our research. Contact [devcoder29cse@gmail.com](mailto:devcoder29cse@gmail.com) for details.
+*   **Legacy Note:** We respect the community. All commits prior to Feb 11, 2026, remain legally available under the original MIT license for those who previously cloned them.
+
+---
 
 [![HIERARCHICAL RAG Paper](https://img.shields.io/badge/Read_Paper-PDF-red.svg?style=for-the-badge)](docs/WiredBrain_Research_Paper.pdf)
 [![TRM Report](https://img.shields.io/badge/TRM_Report-PDF-blueviolet.svg?style=for-the-badge)](docs/TRM_Technical_Report.pdf)

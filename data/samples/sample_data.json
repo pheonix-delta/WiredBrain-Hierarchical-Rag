@@ -1,0 +1,294 @@
+{
+    "dataset_info": {
+        "total_chunks": 693313,
+        "gates": 13,
+        "avg_quality": 0.878,
+        "entities": 172683,
+        "relationships": 688642,
+        "sample_size": 10
+    },
+    "chunks": [
+        {
+            "chunk_id": "MATH-CTRL-001",
+            "gate": "MATH-CTRL",
+            "branch": "Control Theory",
+            "topic": "LQR Design",
+            "level": "Advanced",
+            "content": "Linear Quadratic Regulator (LQR) is an optimal control technique that minimizes a quadratic cost function. The cost function J = ∫(x^T Q x + u^T R u)dt balances state error (Q matrix) and control effort (R matrix). The optimal feedback gain K is computed by solving the Algebraic Riccati Equation (ARE): A^T P + PA - PBR^{-1}B^T P + Q = 0, where the control law is u = -Kx with K = R^{-1}B^T P. This approach guarantees stability for controllable systems and provides optimal performance with respect to the quadratic cost.",
+            "quality_score": 0.92,
+            "entities": [
+                "LQR",
+                "Riccati Equation",
+                "Optimal Control",
+                "Feedback Gain"
+            ],
+            "prerequisites": [
+                "Linear Algebra",
+                "State Space Representation",
+                "Controllability"
+            ],
+            "chunk_length": 512,
+            "source": "Modern Control Engineering - Ogata"
+        },
+        {
+            "chunk_id": "GENERAL-042",
+            "gate": "GENERAL",
+            "branch": "Robotics",
+            "topic": "Kinematics",
+            "level": "Intermediate",
+            "content": "Forward kinematics computes the end-effector position and orientation given joint angles. For a 6-DOF manipulator, the transformation matrix T = T1 * T2 * T3 * T4 * T5 * T6 represents the cumulative effect of all joint transformations. Each Ti is a 4x4 homogeneous transformation matrix combining rotation and translation. The Denavit-Hartenberg (DH) convention provides a systematic method to assign coordinate frames and derive these transformations. The final transformation gives position (px, py, pz) and orientation (roll, pitch, yaw) of the end-effector in the base frame.",
+            "quality_score": 0.88,
+            "entities": [
+                "Forward Kinematics",
+                "DH Convention",
+                "Transformation Matrix",
+                "End-Effector",
+                "6-DOF"
+            ],
+            "prerequisites": [
+                "Homogeneous Transformations",
+                "Rotation Matrices"
+            ],
+            "chunk_length": 568,
+            "source": "Robotics: Modelling, Planning and Control - Siciliano"
+        },
+        {
+            "chunk_id": "HARD-SPEC-128",
+            "gate": "HARD-SPEC",
+            "branch": "Microcontrollers",
+            "topic": "STM32",
+            "level": "Beginner",
+            "content": "The STM32F4 series features ARM Cortex-M4 cores running at up to 180 MHz. Key specifications: 1MB Flash, 192KB SRAM, 12-bit ADC (2.4 MSPS), USB OTG, CAN, I2C, SPI interfaces. Power consumption: 238 μA/MHz in Run mode, 1.8V to 3.6V operating voltage. The FPU (Floating Point Unit) enables efficient DSP operations with single-precision floating-point instructions. Typical applications include motor control, industrial automation, and embedded systems requiring real-time performance. The HAL (Hardware Abstraction Layer) library simplifies peripheral configuration.",
+            "quality_score": 0.85,
+            "entities": [
+                "STM32F4",
+                "Cortex-M4",
+                "FPU",
+                "HAL",
+                "ADC"
+            ],
+            "prerequisites": [
+                "Embedded C",
+                "ARM Architecture Basics"
+            ],
+            "chunk_length": 542,
+            "source": "STM32F4 Reference Manual - STMicroelectronics"
+        },
+        {
+            "chunk_id": "AV-NAV-089",
+            "gate": "AV-NAV",
+            "branch": "Path Planning",
+            "topic": "A* Algorithm",
+            "level": "Intermediate",
+            "content": "A* is a graph-based path planning algorithm that finds the shortest path from start to goal. It uses a heuristic function h(n) to estimate the cost to the goal, combined with the actual cost g(n) from the start. The evaluation function f(n) = g(n) + h(n) prioritizes nodes for exploration. A* is optimal if the heuristic is admissible (never overestimates). Common heuristics include Euclidean distance for continuous spaces and Manhattan distance for grid-based maps. The algorithm maintains an open list (priority queue) and a closed list (visited nodes). Time complexity is O(b^d) where b is the branching factor and d is the depth.",
+            "quality_score": 0.91,
+            "entities": [
+                "A* Algorithm",
+                "Heuristic Function",
+                "Path Planning",
+                "Graph Search",
+                "Priority Queue"
+            ],
+            "prerequisites": [
+                "Graph Theory",
+                "Data Structures"
+            ],
+            "chunk_length": 628,
+            "source": "Artificial Intelligence: A Modern Approach - Russell & Norvig"
+        },
+        {
+            "chunk_id": "CS-AI-015",
+            "gate": "CS-AI",
+            "branch": "Machine Learning",
+            "topic": "Transformers",
+            "level": "Advanced",
+            "content": "The Transformer architecture introduced self-attention mechanisms that revolutionized NLP. Unlike RNNs, Transformers process sequences in parallel using multi-head attention: Attention(Q,K,V) = softmax(QK^T/√d_k)V. The model consists of encoder and decoder stacks, each with self-attention and feed-forward layers. Positional encodings are added to input embeddings to preserve sequence order. Key innovations include: (1) scaled dot-product attention, (2) multi-head attention for different representation subspaces, (3) layer normalization, and (4) residual connections. GPT uses decoder-only architecture, while BERT uses encoder-only for bidirectional context.",
+            "quality_score": 0.94,
+            "entities": [
+                "Transformer",
+                "Self-Attention",
+                "Multi-Head Attention",
+                "BERT",
+                "GPT",
+                "Positional Encoding"
+            ],
+            "prerequisites": [
+                "Neural Networks",
+                "Linear Algebra",
+                "Attention Mechanisms"
+            ],
+            "chunk_length": 712,
+            "source": "Attention Is All You Need - Vaswani et al."
+        },
+        {
+            "chunk_id": "SPACE-AERO-034",
+            "gate": "SPACE-AERO",
+            "branch": "Orbital Mechanics",
+            "topic": "Hohmann Transfer",
+            "level": "Intermediate",
+            "content": "The Hohmann transfer is the most fuel-efficient two-impulse maneuver for transferring between circular orbits. It uses an elliptical transfer orbit tangent to both the initial and final orbits. The delta-v requirements are: Δv1 = √(μ/r1) * (√(2r2/(r1+r2)) - 1) for the first burn, and Δv2 = √(μ/r2) * (1 - √(2r1/(r1+r2))) for the second burn, where μ is the gravitational parameter, r1 is the initial orbit radius, and r2 is the final orbit radius. Total Δv = Δv1 + Δv2. Transfer time is half the period of the elliptical orbit: t = π√((r1+r2)³/(8μ)).",
+            "quality_score": 0.89,
+            "entities": [
+                "Hohmann Transfer",
+                "Orbital Maneuver",
+                "Delta-V",
+                "Elliptical Orbit"
+            ],
+            "prerequisites": [
+                "Orbital Mechanics Basics",
+                "Kepler's Laws"
+            ],
+            "chunk_length": 658,
+            "source": "Fundamentals of Astrodynamics - Bate, Mueller, White"
+        },
+        {
+            "chunk_id": "OLYMPIAD-007",
+            "gate": "OLYMPIAD",
+            "branch": "Mathematics",
+            "topic": "Number Theory",
+            "level": "Advanced",
+            "content": "Fermat's Little Theorem states that if p is prime and a is not divisible by p, then a^(p-1) ≡ 1 (mod p). This is fundamental in modular arithmetic and cryptography. Proof: Consider the set {a, 2a, 3a, ..., (p-1)a}. These are all distinct modulo p and form a permutation of {1, 2, ..., p-1}. Therefore, a * 2a * 3a * ... * (p-1)a ≡ 1 * 2 * 3 * ... * (p-1) (mod p), which simplifies to a^(p-1) * (p-1)! ≡ (p-1)! (mod p). Since gcd((p-1)!, p) = 1, we can divide both sides by (p-1)! to get a^(p-1) ≡ 1 (mod p). Applications include primality testing and RSA encryption.",
+            "quality_score": 0.93,
+            "entities": [
+                "Fermat's Little Theorem",
+                "Modular Arithmetic",
+                "Prime Numbers",
+                "RSA",
+                "Number Theory"
+            ],
+            "prerequisites": [
+                "Modular Arithmetic",
+                "Group Theory Basics"
+            ],
+            "chunk_length": 745,
+            "source": "An Introduction to the Theory of Numbers - Hardy & Wright"
+        },
+        {
+            "chunk_id": "CHEM-BIO-056",
+            "gate": "CHEM-BIO",
+            "branch": "Biochemistry",
+            "topic": "Enzyme Kinetics",
+            "level": "Intermediate",
+            "content": "The Michaelis-Menten equation describes enzyme kinetics: v = (Vmax * [S]) / (Km + [S]), where v is the reaction rate, Vmax is the maximum rate, [S] is substrate concentration, and Km is the Michaelis constant (substrate concentration at half Vmax). The equation assumes: (1) enzyme-substrate complex formation is rapid and reversible, (2) product formation is irreversible, and (3) steady-state conditions apply. The Lineweaver-Burk plot (1/v vs 1/[S]) linearizes the equation for parameter estimation. Competitive inhibitors increase apparent Km, while non-competitive inhibitors decrease Vmax. Enzyme efficiency is measured by kcat/Km.",
+            "quality_score": 0.87,
+            "entities": [
+                "Michaelis-Menten",
+                "Enzyme Kinetics",
+                "Km",
+                "Vmax",
+                "Lineweaver-Burk"
+            ],
+            "prerequisites": [
+                "Chemical Kinetics",
+                "Enzyme Structure"
+            ],
+            "chunk_length": 682,
+            "source": "Biochemistry - Berg, Tymoczko, Stryer"
+        },
+        {
+            "chunk_id": "CODE-GEN-023",
+            "gate": "CODE-GEN",
+            "branch": "Algorithms",
+            "topic": "Dynamic Programming",
+            "level": "Advanced",
+            "content": "Dynamic Programming (DP) solves complex problems by breaking them into overlapping subproblems. Key principles: (1) optimal substructure - optimal solution contains optimal solutions to subproblems, (2) overlapping subproblems - same subproblems are solved multiple times. Two approaches: top-down (memoization) and bottom-up (tabulation). Example: Longest Common Subsequence (LCS). For strings X[1..m] and Y[1..n], LCS(i,j) = LCS(i-1,j-1) + 1 if X[i]=Y[j], else max(LCS(i-1,j), LCS(i,j-1)). Time complexity: O(mn), space: O(mn) or O(min(m,n)) with optimization. Applications: diff algorithms, bioinformatics sequence alignment, edit distance.",
+            "quality_score": 0.90,
+            "entities": [
+                "Dynamic Programming",
+                "LCS",
+                "Memoization",
+                "Optimal Substructure"
+            ],
+            "prerequisites": [
+                "Recursion",
+                "Algorithm Analysis"
+            ],
+            "chunk_length": 698,
+            "source": "Introduction to Algorithms - Cormen et al."
+        },
+        {
+            "chunk_id": "PHYS-QUANT-012",
+            "gate": "PHYS-QUANT",
+            "branch": "Quantum Mechanics",
+            "topic": "Schrödinger Equation",
+            "level": "Advanced",
+            "content": "The time-dependent Schrödinger equation governs quantum state evolution: iℏ(∂ψ/∂t) = Ĥψ, where ψ is the wave function, ℏ is reduced Planck's constant, and Ĥ is the Hamiltonian operator. For time-independent potentials, separation of variables yields the time-independent form: Ĥψ = Eψ, an eigenvalue equation where E is energy. The wave function ψ(x,t) contains all information about the system. Born's interpretation: |ψ(x,t)|² gives the probability density of finding the particle at position x at time t. Solutions must be normalized: ∫|ψ|²dx = 1. The equation is linear, allowing superposition of states. Expectation values: ⟨A⟩ = ∫ψ*Âψdx.",
+            "quality_score": 0.95,
+            "entities": [
+                "Schrödinger Equation",
+                "Wave Function",
+                "Hamiltonian",
+                "Quantum Mechanics",
+                "Eigenvalue"
+            ],
+            "prerequisites": [
+                "Complex Analysis",
+                "Differential Equations",
+                "Linear Algebra"
+            ],
+            "chunk_length": 752,
+            "source": "Principles of Quantum Mechanics - Shankar"
+        }
+    ],
+    "knowledge_graph_sample": {
+        "description": "Sample of extracted entities and relationships from the knowledge graph",
+        "entities": [
+            {
+                "entity_id": "E_001",
+                "name": "LQR",
+                "type": "Method",
+                "gate": "MATH-CTRL",
+                "mentions": 156,
+                "confidence": 0.95
+            },
+            {
+                "entity_id": "E_002",
+                "name": "Transformer",
+                "type": "Technology",
+                "gate": "CS-AI",
+                "mentions": 423,
+                "confidence": 0.98
+            },
+            {
+                "entity_id": "E_003",
+                "name": "STM32F4",
+                "type": "Tool",
+                "gate": "HARD-SPEC",
+                "mentions": 89,
+                "confidence": 0.92
+            }
+        ],
+        "relationships": [
+            {
+                "source": "LQR",
+                "target": "Riccati Equation",
+                "relation": "USES",
+                "confidence": 0.94
+            },
+            {
+                "source": "LQR",
+                "target": "Optimal Control",
+                "relation": "IS_A",
+                "confidence": 0.96
+            },
+            {
+                "source": "Transformer",
+                "target": "Self-Attention",
+                "relation": "CONTAINS",
+                "confidence": 0.97
+            },
+            {
+                "source": "BERT",
+                "target": "Transformer",
+                "relation": "BASED_ON",
+                "confidence": 0.99
+            },
+            {
+                "source": "GPT",
+                "target": "Transformer",
+                "relation": "BASED_ON",
+                "confidence": 0.99
+            }
+        ]
+    }
+}
