@@ -751,9 +751,9 @@ If you use this work in your research, please cite:
 
 <div align="center">
 
-**MIT License** - See [LICENSE](LICENSE) for details
+**GNU AGPLv3 License** - See [LICENSE](LICENSE) for details
 
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg?style=for-the-badge)](LICENSE)
+[![License: AGPL v3](https://img.shields.io/badge/License-AGPL_v3-blue.svg?style=for-the-badge)](LICENSE)
 
 </div>
 
